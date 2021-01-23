@@ -209,10 +209,92 @@ $(document).ready(function(){
     // Moment.js for the time sections
     const time = moment();
     let todayDate = moment().format("LL");
+    let currentHour = moment().format("HH");
+    let timeBlock7 = $("#btn7").data().time;
+    let timeBlock8 = $("#btn8").data().time;
+    let timeBlock9 = $("#btn9").data().time;
+    let timeBlock10 = $("#btn10").data().time;
+    let timeBlock11 = $("#btn11").data().time;
+    let timeBlock12 = $("#btn12").data().time;
+    let timeBlock13 = $("#btn13").data().time;
+    let timeBlock14 = $("#btn14").data().time;
+    let timeBlock15 = $("#btn15").data().time;
+    let timeBlock16 = $("#btn16").data().time;
+
     
     $("#currentDay").append("<div>" + todayDate + "</div>")
 
-    
+    if (timeBlock7 < currentHour) {
+        $("#description7").addClass("past")
+    } else if (timeBlock7 > currentHour) {
+        $("#description7").addClass("future")
+    } else if (timeBlock7 == currentHour) {
+        $("#description7").addClass("present")
+    }
+    if (timeBlock8 < currentHour) {
+        $("#description8").addClass("past")
+    } else if (timeBlock8 > currentHour) {
+        $("#description8").addClass("future")
+    } else if (timeBlock8 == currentHour) {
+        $("#description8").addClass("present")
+    }
+    if (timeBlock9 < currentHour) {
+        $("#description9").addClass("past")
+    } else if (timeBlock9 > currentHour) {
+        $("#description9").addClass("future")
+    } else if (timeBlock9 == currentHour) {
+        $("#description9").addClass("present")
+    }
+    if (timeBlock10 < currentHour) {
+        $("#description10").addClass("past")
+    } else if (timeBlock10 > currentHour) {
+        $("#description10").addClass("future")
+    } else if (timeBlock10 == currentHour) {
+        $("#description10").addClass("present")
+    }
+    if (timeBlock11 < currentHour) {
+        $("#description11").addClass("past")
+    } else if (timeBlock11 > currentHour) {
+        $("#description11").addClass("future")
+    } else if (timeBlock11 == currentHour) {
+        $("#description11").addClass("present")
+    }
+    if (timeBlock12 < currentHour) {
+        $("#description12").addClass("past")
+    } else if (timeBlock12 > currentHour) {
+        $("#description12").addClass("future")
+    } else if (timeBlock12 == currentHour) {
+        $("#description12").addClass("present")
+    }
+    if (timeBlock13 < currentHour) {
+        $("#description13").addClass("past")
+    } else if (timeBlock13 > currentHour) {
+        $("#description13").addClass("future")
+    } else if (timeBlock13 == currentHour) {
+        $("#description13").addClass("present")
+    }
+    if (timeBlock14 < currentHour) {
+        $("#description14").addClass("past")
+    } else if (timeBlock14 > currentHour) {
+        $("#description14").addClass("future")
+    } else if (timeBlock14 == currentHour) {
+        $("#description14").addClass("present")
+    }
+    if (timeBlock15 < currentHour) {
+        $("#description15").addClass("past")
+    } else if (timeBlock15 > currentHour) {
+        $("#description15").addClass("future")
+    } else if (timeBlock15 == currentHour) {
+        $("#description15").addClass("present")
+    }
+    if (timeBlock16 < currentHour) {
+        $("#description16").addClass("past")
+    } else if (timeBlock16 > currentHour) {
+        $("#description16").addClass("future")
+    } else if (timeBlock16 == currentHour) {
+        $("#description16").addClass("present")
+    }
+
 });
 
 
