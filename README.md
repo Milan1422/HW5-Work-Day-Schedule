@@ -26,5 +26,5 @@ The main takeaway from the project was the implementation of third-party-apis an
 ## Finished Web App
 
 ![web app](mdfiles/finishedwebapp.png)
-[GitHub:] 
-[GitHubPages:]
+[GitHub:] https://github.com/Milan1422/HW5-Work-Day-Schedule
+[GitHubPages:] https://milan1422.github.io/HW5-Work-Day-Schedule/.
