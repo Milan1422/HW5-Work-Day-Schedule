@@ -205,7 +205,13 @@ $(document).ready(function(){
         }
 
     });
+
+    // Moment.js for the time sections
+    const time = moment();
+    let todayDate = moment().format("LL");
     
+    $("#currentDay").append("<div>" + todayDate + "</div>")
+
     
 });
 
