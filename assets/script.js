@@ -2,26 +2,28 @@ $(document).ready(function(){
 
     // array of buttons
     let buttonArray = [];
-
+    
     // Save input to the time block
     $("#btn7").click(function(){
         let newListItem = $("#description7").val();
         if (newListItem.length > 0){
             // $("#description7").val("");
-            buttonArray.push({
-                description: newListItem
-            })
-            localStorage.setItem("new added task", newListItem);
-            console.log(newListItem);
+            localStorage.setItem("new-added-task-7", newListItem);
+            let outputListItem = localStorage.getItem("new-added-task-7");
+            // console.log(outputListItem);
+            $("textarea.description7").text(outputListItem)
         }
+        
 
-        for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            const value = localStorage.getItem(key);
+        
 
-            newListItem.innerHtml += `${value}`
+        // for (let i = 0; i < localStorage.length; i++) {
+        //     const key = localStorage.key(i);
+        //     const value = localStorage.getItem(key);
+
+        //     newListItem.innerHtml += `${value}`
             
-        }
+        // }
 
     });
     $("#btn8").click(function(){
